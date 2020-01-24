@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LenguajesProgramacionFinal</string>
+    <string name="opcion1PantallaPrincipal">Perros Perdidos</string>
+    <string name="opcion2PantallaPrincipal">Adopta un Perro</string>
+    <string name="opcion3PantallaPrincipal">Encontre un perro</string>
+    <string name="tituloPantallaPerrosPerdidos">Perros Perdidos</string>
+    <string name="tituloPantallaPerrosAdoptar">Adopcion Perros</string>
+
+    <string name="primerElementoTextViewPerrosFormulario">Nombre al que responde:</string>
+    <string name="segundoElementoTextViewPerrosFormulario">Raza del perro:</string>
+    <string name="tercerElementoTextViewPerrosFormulario">Edad del perro:</string>
+    <string name="cuartoElementoTextViewPerrosFormulario">Sexo del perro:</string>
+    <string name="quintoElementoTextViewPerrosFormulario">Descripcion del perro:</string>
+    <string name="sextoElementoTextViewPerrosFormulario">Foto del perro:</string>
+    <string name="elementoX">X</string>
+    <string name="elementoV">OK</string>
+
+    <string name="descripcionImagenPerroPerdido">Aqui yace la imagen de un perro perdido</string>
+    <string name="descripcionImagenPerroAdoptar">Aqui yace la imagen de un perro en adopcion</string>
+</resources>

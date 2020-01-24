@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1075320906535",
+    "firebase_url": "https://lenguajesdeprogramacion-f9944.firebaseio.com",
+    "project_id": "lenguajesdeprogramacion-f9944",
+    "storage_bucket": "lenguajesdeprogramacion-f9944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075320906535:android:2a7398902b98e19517bf02",
+        "android_client_info": {
+          "package_name": "com.espol.lenguajesprogramacionfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075320906535-flbtj3s3u7625ifu527e7knangbgdqi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs4IkCL8YArgwdrdKYPloHT1pEdDtXC78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075320906535-flbtj3s3u7625ifu527e7knangbgdqi0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
