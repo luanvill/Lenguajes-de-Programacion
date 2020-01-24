@@ -1,18 +1,12 @@
 package com.espol.lenguajesprogramacionfinal
 
 import android.os.Bundle
-import android.os.NetworkOnMainThreadException
-import android.util.Log
 import android.widget.ListView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.firestore.FirebaseFirestore
-import java.io.*
-import java.net.HttpURLConnection
-import java.net.URL
 
 
 // Access a Cloud Firestore instance from your Activity
@@ -52,7 +46,8 @@ class PerrosAdoptarActivity : AppCompatActivity(){
         listaPerrosAdoptar  = findViewById(R.id.listaPerrosAdoptar)
         val titulo: TextView = findViewById(R.id.tituloPerrosAdoptar)
 
-        cargarPerrosAdoptarInicial()
+        var respuesta: String = ConexionBD().execute("https://lenguajesdeprogramacion-f9944.firebaseio.com/perros").get()
+
 
         titulo.text = "Perros Adopcion"
 // 1
@@ -62,37 +57,6 @@ class PerrosAdoptarActivity : AppCompatActivity(){
         listaPerrosAdoptar.adapter = adapter
 
 
-    }
-
-    private fun cargarPerrosAdoptarInicial(){
-        //llamar al web service
-        val url : URL = URL("https://lenguajesdeprogramacion-f9944.firebaseio.com/perros")
-        var urlConnection : HttpURLConnection = url.openConnection() as HttpURLConnection
-        try{
-            var entradaDatos: InputStream = BufferedInputStream(urlConnection.getInputStream())
-            val texto = readStream(entradaDatos)
-            print(texto)
-            Log.i("PERROSADOPTAR","Saliendo al web service")
-            //Toast.makeText(this,texto,Toast.LENGTH_LONG).show()
-        }catch(e: NetworkOnMainThreadException) {
-            print(e.message)
-            Log.i("PERROSADOPTAR",e.message)
-        }finally{
-                urlConnection.disconnect()
-        }
-    }
-
-    @Throws(IOException::class)
-    private fun readStream(`is`: InputStream): String? {
-        val sb = StringBuilder()
-        val r = BufferedReader(InputStreamReader(`is`), 1000)
-        var line: String = r.readLine()
-        while (line != null) {
-            sb.append(line)
-            line = r.readLine()
-        }
-        `is`.close()
-        return sb.toString()
     }
 
     private fun updateUI(user: FirebaseUser?) {
