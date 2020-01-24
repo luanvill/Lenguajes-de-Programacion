@@ -1,8 +1,10 @@
 package com.espol.lenguajesprogramacionfinal
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.ListView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -37,8 +39,10 @@ class PerrosAdoptarActivity : AppCompatActivity(){
     public override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = FirebaseAuth.getInstance().currentUser
-        updateUI(currentUser)
+        val authe = FirebaseAuth.getInstance()
+        authe.signInAnonymously()
+        val currentUser = authe.currentUser
+
     }
 
     fun inicializarComponentes(){
@@ -47,6 +51,8 @@ class PerrosAdoptarActivity : AppCompatActivity(){
         val titulo: TextView = findViewById(R.id.tituloPerrosAdoptar)
 
         var respuesta: String = ConexionBD().execute("https://lenguajesdeprogramacion-f9944.firebaseio.com/perros").get()
+        Log.i("PERROSADOPTAR",respuesta)
+        Toast.makeText(this,respuesta,Toast.LENGTH_LONG).show()
 
 
         titulo.text = "Perros Adopcion"
