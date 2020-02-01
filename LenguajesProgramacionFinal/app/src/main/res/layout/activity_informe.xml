@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro.InformeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/nombrePerroFormulario"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/primerElementoTextViewPerrosFormulario" />
+
+            <EditText
+                android:id="@+id/nombre_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Nombre" />
+
+            <TextView
+                android:id="@+id/razaPerroFormulario"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/segundoElementoTextViewPerrosFormulario" />
+
+            <EditText
+                android:id="@+id/raza_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Raza" />
+
+            <TextView
+                android:id="@+id/sexoPerroFormulario"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cuartoElementoTextViewPerrosFormulario" />
+
+            <EditText
+                android:id="@+id/sexo_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="Sexo" />
+
+            <TextView
+                android:id="@+id/edadPerroFormulario"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tercerElementoTextViewPerrosFormulario" />
+
+            <EditText
+                android:id="@+id/telefono_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Número"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/descripcionPerroFormulario"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quintoElementoTextViewPerrosFormulario" />
+
+            <EditText
+                android:id="@+id/descripcion_r"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Descripción"
+                android:inputType="textPersonName" />
+            <TextView
+                android:id="@+id/fotoPerroFormulario"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sextoElementoTextViewPerrosFormulario" />
+
+            <Button
+                android:id="@+id/seleccionar_foto"
+                android:layout_width="match_parent"
+                android:layout_height="177dp"
+                android:background="@drawable/boton_normal"
+                android:text="FOTO"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/cancelarFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_normal"
+                android:text="@string/elementoX"
+                android:textColor="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/confirmarFormulario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/boton_normal"
+                android:text="@string/elementoV"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

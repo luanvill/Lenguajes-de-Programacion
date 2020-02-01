@@ -1,34 +1,50 @@
 {
   "project_info": {
-    "project_number": "1075320906535",
-    "firebase_url": "https://lenguajesdeprogramacion-f9944.firebaseio.com",
-    "project_id": "lenguajesdeprogramacion-f9944",
-    "storage_bucket": "lenguajesdeprogramacion-f9944.appspot.com"
+    "project_number": "195755047619",
+    "firebase_url": "https://proyectofinal3-de62f.firebaseio.com",
+    "project_id": "proyectofinal3-de62f",
+    "storage_bucket": "proyectofinal3-de62f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1075320906535:android:2a7398902b98e19517bf02",
+        "mobilesdk_app_id": "1:195755047619:android:cfbef82010c1ae2e5f0076",
         "android_client_info": {
-          "package_name": "com.espol.lenguajesprogramacionfinal"
+          "package_name": "com.example.proyectofinal3"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1075320906535-flbtj3s3u7625ifu527e7knangbgdqi0.apps.googleusercontent.com",
+          "client_id": "195755047619-sq3i2d20d0p70cmbul2s4slch3uf8iss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectofinal3",
+            "certificate_hash": "aa89e7673a0c40bb3f0f4a89930edf6a2d033acc"
+          }
+        },
+        {
+          "client_id": "195755047619-p4mpnrc9112n78s4d85qcd0c7bgum3c3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.proyectofinal3",
+            "certificate_hash": "35dd72c6ad03506d7bf0175246aeb29c4e850ddd"
+          }
+        },
+        {
+          "client_id": "195755047619-aaci8runf6i651utfm6lc72op3v9bhek.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAs4IkCL8YArgwdrdKYPloHT1pEdDtXC78"
+          "current_key": "AIzaSyA5YxjN-KtdYEVahiD95czFZKGWCZprLu0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1075320906535-flbtj3s3u7625ifu527e7knangbgdqi0.apps.googleusercontent.com",
+              "client_id": "195755047619-aaci8runf6i651utfm6lc72op3v9bhek.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

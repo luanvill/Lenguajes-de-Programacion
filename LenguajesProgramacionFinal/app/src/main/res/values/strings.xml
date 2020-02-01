@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">LenguajesProgramacionFinal</string>
+
+    <string name="email">Correo</string>
+    <string name="password">Contraseña</string>
+    <string name="forgotPassword">Olvidaste tu contraseña?</string>
+    <string name="firstName">Nombre</string>
+    <string name="lastName">Apellido</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="createAct">Crear cuenta</string>
+
     <string name="opcion1PantallaPrincipal">Perros Perdidos</string>
     <string name="opcion2PantallaPrincipal">Adopta un Perro</string>
     <string name="opcion3PantallaPrincipal">Encontre un perro</string>
@@ -8,9 +16,9 @@
 
     <string name="primerElementoTextViewPerrosFormulario">Nombre al que responde:</string>
     <string name="segundoElementoTextViewPerrosFormulario">Raza del perro:</string>
-    <string name="tercerElementoTextViewPerrosFormulario">Edad del perro:</string>
+    <string name="tercerElementoTextViewPerrosFormulario">Número de contacto:</string>
     <string name="cuartoElementoTextViewPerrosFormulario">Sexo del perro:</string>
-    <string name="quintoElementoTextViewPerrosFormulario">Descripcion del perro:</string>
+    <string name="quintoElementoTextViewPerrosFormulario">Descripción del perro:</string>
     <string name="sextoElementoTextViewPerrosFormulario">Foto del perro:</string>
     <string name="elementoX">X</string>
     <string name="elementoV">OK</string>

@@ -4,44 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/colorprincipalaplicacion"
+
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/perrosPerdidos"
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
-        android:layout_marginTop="147dp"
-        android:background="@drawable/perdidoperro_fondo_boton"
-        android:text="@string/opcion1PantallaPrincipal"
-        android:textColor="#000000"
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="378dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
-    <Button
-        android:id="@+id/adopciones"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="46dp"
-        android:background="@drawable/adopcionperro_fondo_boton"
-        android:text="@string/opcion2PantallaPrincipal"
-        android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/encontrePerro"
-        app:layout_constraintStart_toStartOf="@+id/encontrePerro"
-        app:layout_constraintTop_toBottomOf="@+id/perrosPerdidos" />
+        <EditText
+            android:id="@+id/etEmail"
+            style="style/viewCustom"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
 
-    <Button
-        android:id="@+id/encontrePerro"
-        android:layout_width="186dp"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="50dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
-        android:background="@drawable/encontreperro_fondo_boton"
-        android:text="@string/opcion3PantallaPrincipal"
-        android:textColor="#000000"
+        <EditText
+            android:id="@+id/etPassword"
+            style="@style/viewCustom"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/viewCustom"
+            android:background="@drawable/rounded_button"
+            android:onClick="login"
+            android:text="@string/login"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/create"
+            style="@style/viewCustom"
+            android:background="@drawable/rounded_button"
+            android:onClick="register"
+            android:text="Crear Cuenta"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            style="@style/viewCustom"
+            android:layout_below="@id/btnLogin"
+            android:gravity="center_horizontal"
+            android:onClick="forgotPassword"
+            android:text="@string/forgotPassword"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="262dp"
+        android:layout_height="260dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/adopciones" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
